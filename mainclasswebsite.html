@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demilade's Class Website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 5px solid #ffcc00;
+    }
+    nav {
+      background-color: #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #004aad;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px auto;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      background-color: #004aad;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="welcome-message">Welcome to the Class Website</h1>
+  <p>HOME OF LEGENDS</p>
+  <img src=".jpg" height="250" width="300">
+</header>
+
+<script>
+  const studentName = localStorage.getItem("studentName");
+  if (studentName) {
+    document.getElementById("welcome-message").textContent = "Welcome, " + studentName + "!";
+  }
+</script>
+
+<nav>
+  <a href="#students">Students</a>
+  <a href="#timetable">Timetable</a>
+  <a href="#news">News</a>
+</nav>
+
+<section id="students" class="card">
+  <h2>OUR CLASS CAPTAINS</h2>
+  <ul>
+    <li>Okekunle Victoria - Class Captain</li>
+    <li>Olasehinde Victor - Assistant Class Captain</li>
+  </ul>
+  <strong>OTHER CLASS MEMBERS</strong>
+  <ol>
+  <pre>
+    <li>Abdulsalam Mustapha</li>
+     <li>Adeite Tumise</li>
+     <li>Adeleye Adetutu</li>
+     <li>Afonja Khadijat</li>
+     <li>Ajiboye Grace</li>
+     <li>Akinlabi Ayomide</li>
+    <li>Akubor Cynthia</li>
+     <li>Amos Abosede</li>
+    <li>Azeez Faizat</li>
+     <li>Azuh Amarachi</li>
+   <li>Chukwu Goodluck</li>
+     <li>Dada Glory</li>
+     <li>Dairo Victor</li>
+   <li>Effiong Samson</li>
+     <li>Fashina Hakeemah</li>
+    <li> Gbadamosi Hassanat</li>
+     <li>Godbless Jesuotekwomeh</li>
+     <li>Inyama Samuel</li>
+     <li>Isyaka Firdausi</li>
+     <li>Madububa Chidera</li>
+    <li> Mekunye Praise</li>
+    <li>Ndu Emmanuel</li>
+     <li>Nwabudike Joshua</li>
+   <li>Nweke Favour</li>
+     <li>Nweke Samuel</li>
+     <li>Obieli Tochukwu</li>
+     <li>Ofeogbu Merit</li>
+     <li>Ojigoh David</li>
+     <li>Ojukwu Ngozi</li>
+     <li>Okelunle Victoria</li>
+     <li>Okere Emmanuel</li>
+     <li>Okeugo Rejoice</li>
+     <li>Okike Daniel</li>
+     <li>Olasehinde Victor</li>
+    <li> Onagbola Haneefah</li>
+     <li>Onaselu Oluwademilade</li>
+     <li>Onwuzurike Chisom</li>
+   <li>Orji Benita</li>
+    <li>Ozumba Emmanuel</li>
+     <li>Satowanu Elizabeth</li>
+     <li>Sulaimon Habbebulah</li>
+     <li>Udechukwu Chizoba</li>
+     <li>Lawal Al-ameen</li>
+  </pre>
+  </ol>
+</section>
+
+<section id="timetable" class="card">
+  <h2>Weekly Timetable</h2>
+  <p><strong>Monday:</strong></p>
+  <p><strong>Tuesday:</strong></p>
+  <p><strong>Wednesday:</strong></p>
+  <p><strong>Thursday:</strong></p>
+  <p><strong>Friday:</strong></p>
+  <strong>NOTE:</strong> Timetable has not been decided for new session
+</section>
+  <img src="IMG-20250729-WA0009_1753803999055.jpg" height="300" width="300">
+
+<section id="news" class="card">
+  <h2>Latest Announcements</h2>
+  <ul>
+    <li>🧳Vacation on Friday - 29th of July </li>
+    <li>📃Results may be collected digitally</li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; SSS3 SCIENCE 4. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

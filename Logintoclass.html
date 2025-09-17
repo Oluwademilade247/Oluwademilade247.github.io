@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #eef2f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 350px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #004aad;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<img src="IMG-20250803-WA0024.jpg" height="400" width="400"/>
+<body>
+<div class="login-box">
+  <h2>SSS3 Science 4 Class Login</h2>
+  <input type="text" id="username" placeholder="Enter your name" />
+  <input type="password" id="password" placeholder="Enter password" />
+  <button onclick="login()">Login</button>
+  <div class="error" id="error-msg"></div>
+</div>
+
+<script>
+  function login() {
+    const name = document.getElementById("username").value.trim();
+    const pass = document.getElementById("password").value;
+
+    if (name === "") {
+      document.getElementById("error-msg").textContent = "Please enter your name.";
+    } else if (pass === "sss3sci4") {
+      localStorage.setItem("studentName", name); // ✅ Save name
+      window.location.href = "mainclasswebsite.html"; // ✅ Go to main site
+    } else {
+      document.getElementById("error-msg").textContent = "Wrong password!";
+    }
+  }
+</script>
+
+</body>
+</html>
